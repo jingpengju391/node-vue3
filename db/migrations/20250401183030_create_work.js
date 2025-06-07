@@ -1,0 +1,35 @@
+exports.up = function (knex) {
+	return knex.schema.createTable('workOrder', (table) => {
+		table.string('workId').primary()
+		table.string('workName')
+		table.string('substationName')
+		table.integer('detectRange')
+		table.string('detectBeginTime')
+		table.string('detectEndTime')
+		table.string('detectMethods')
+		table.string('detectMethodsCn')
+		table.integer('status')
+		table.string('sysDeptId')
+		table.string('sysDeptName')
+		table.string('sysCenterId')
+		table.string('sysCenterName')
+		table.string('sysTeamId')
+		table.string('sysTeamName')
+		table.integer('createUserId')
+		table.string('createUserName')
+		table.string('adoptUserId')
+		table.string('adoptUserName')
+		table.string('substationId')
+		table.string('workRemark')
+		table.integer('temperature')
+		table.integer('humidity')
+		table.integer('workspaceId').defaultTo(1)
+		table.foreign('workspaceId').references('workspaces.id').onDelete('CASCADE')
+		table.timestamp('updatedAt').defaultTo(knex.fn.now())
+		table.timestamp('adoptAt')
+	})
+}
+
+exports.down = function (knex) {
+	return knex.schema.dropTable('workOrder')
+}

@@ -1,0 +1,118 @@
+@use '../../../themes/variables' as *;
+
+.content-scrollbar {
+	height: 100%;
+	.work-status-progress {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		background: $dominant-bg-color;
+		color: #fff;
+		font-size: $font-size-xl;
+		padding: 14px 40px;
+	}
+	.status-0 {
+		background: rgba(253, 170, 86, 0.51);
+	}
+	.status-1 {
+		background: $dominant-bg-color;
+	}
+	.status-2 {
+		background: #666;
+	}
+	.status-10 {
+		background: rgba(255, 49, 65, 0.5);
+	}
+	.work-details {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		&-content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			li {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				font-size: $font-size-xl;
+				padding: 20px 40px;
+				background: #fff;
+				margin-bottom: 2px;
+				span:last-child {
+					color: #999;
+				}
+			}
+			li:first-child {
+				line-height: 50px;
+				margin-bottom: 0px;
+				padding-top: 15px;
+				span {
+					font-weight: bold;
+				}
+			}
+			li:nth-child(2) {
+				line-height: 40px;
+				margin-bottom: 20px;
+				padding-bottom: 15px;
+				span {
+					color: #999;
+				}
+			}
+		}
+		.collapse-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding: 8px 0;
+			color: $dominant-color;
+			background: #fff;
+			font-size: $font-size-xl;
+			line-height: 60px;
+		}
+	}
+	.detect-method-title {
+		color: #999;
+		font-size: $font-size-xl;
+		padding: 20px 40px;
+	}
+	.detect-method-list {
+		display: flex;
+		flex-direction: column;
+		.detect-method-item {
+			display: flex;
+			justify-content: space-between;
+			background: #fff;
+			margin-bottom: 20px;
+			padding: 20px 40px;
+			gap: 20px;
+			align-items: center;
+			font-size: $font-size-xl;
+			&-progress {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				width: 50%;
+				margin-right: auto;
+				gap: 10px;
+			}
+			.container-image{
+				width: 80px;
+				height: 80px;
+			}
+		}
+	}
+}
+
+.submit-work-order {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding: 20px 0;
+	&-button {
+		width: 80%;
+		border-radius: 33px;
+	}
+}

@@ -1,0 +1,27 @@
+.simple-keyboard {
+	position: fixed;
+	bottom: -100px;
+	z-index: 9999;
+	transition: all 0.3s ease-in;
+	font-size: 28px;
+}
+
+.simple-keyboard .hg-candidate-box {
+	position: fixed;
+}
+
+.simple-keyboard .hg-button-change {
+	max-width: 200px;
+}
+
+.simple-keyboard .hg-button-close {
+	max-width: 200px;
+	background: #db3e5d;
+	color: #fff;
+}
+
+
+.simple-keyboard .hg-button{
+	height: auto;
+	width: auto;
+}

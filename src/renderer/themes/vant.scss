@@ -1,0 +1,86 @@
+:root,
+:host {
+	--van-button-primary-background: #0d867f !important;
+	--van-button-primary-border-color: #0d867f !important;
+	--van-tabs-bottom-bar-color: #0d867f !important;
+	--van-nav-bar-title-font-size: 36px !important;
+	--van-nav-bar-height: 80px !important;
+	--van-line-height-lg: 80px !important;
+	--van-nav-bar-title-text-color: #333 !important;
+	--van-button-normal-font-size: 24px !important;
+	--van-button-default-height: 54px !important;
+	--van-button-default-font-size: 26px !important;
+	--van-button-large-height: 66px !important;
+	--van-cell-group-title-font-size: 20px !important;
+	--van-cell-group-title-line-height: 22px !important;
+	--van-cell-large-title-font-size: 20px !important;
+	--van-cell-large-value-font-size: 20px !important;
+	--van-cell-large-label-font-size: 18px !important;
+	--van-cell-line-height: 36px !important;
+	--el-messagebox-font-size: 50px !important;
+	--el-font-line-height-primary: 1.5 !important;
+	--el-font-size-large: 24px !important;
+	--el-font-size-base: 20px !important;
+	--van-dropdown-menu-title-font-size: 24px !important;
+	--van-dropdown-menu-height: auto !important;
+	--van-dropdown-menu-title-active-text-color: #0d867f !important;
+	--van-dropdown-menu-option-active-color: #0d867f !important;
+	--van-cell-font-size: 1.75rem !important;
+	--van-notice-bar-font-size: 22px !important;
+	--van-notice-bar-icon-size: 20px !important;
+	--van-notice-bar-line-height: 80px !important;
+	--van-notice-bar-height: 80px !important;
+	--van-notice-bar-padding: 0 40px !important;
+	--van-stepper-button-icon-color: #0d867f !important;
+	--van-stepper-input-height: 50px !important;
+	--van-stepper-input-width: 100px !important;
+	--van-stepper-input-font-size: 24px !important;
+	--van-toast-font-size: 20px !important;
+	--van-toast-text-padding: 15px !important;
+	--van-cell-vertical-padding: 20px !important;
+	--van-cell-horizontal-padding: 20px !important;
+}
+
+.van-nav-bar__left {
+	padding-left: 35px !important;
+}
+
+.van-nav-bar__right {
+	padding-right: 40px !important;
+}
+
+.van-dropdown-menu__title:after {
+	top: 43% !important;
+	right: -15px !important;
+	border: 8px solid !important;
+	border-color: transparent transparent var(--van-gray-4) var(--van-gray-4) !important;
+}
+
+.van-dropdown-menu__title--active:after {
+	top: 50% !important;
+}
+
+.van-nav-bar__content {
+	.van-nav-bar__left {
+		.van-icon-arrow-left {
+			font-size: 30px !important;
+			color: #333 !important;
+		}
+	}
+	.van-nav-bar__right {
+		font-size: 30px !important;
+		color: #333 !important;
+	}
+}
+
+.van-cell-group__title {
+	font-size: 1.75rem;
+	padding: 20px 40px !important;
+}
+
+.van-cell__label {
+	margin-top: 10px !important;
+    --van-nav-bar-arrow-size: 48px !important;
+    --van-nav-bar-icon-color: #000000 !important;
+    --van-stepper-button-icon-color: #0D867F !important;
+}

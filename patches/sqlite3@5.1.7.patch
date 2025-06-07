@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index ab413ff4a660e721413dceb46fe0196bcb068e6b..a54b830f8c85ebd9639052d211e44bbcaf1d5ff0 100644
+--- a/package.json
++++ b/package.json
+@@ -9,7 +9,6 @@
+   },
+   "binary": {
+     "napi_versions": [
+-      3,
+       6
+     ]
+   },

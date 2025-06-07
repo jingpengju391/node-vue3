@@ -1,0 +1,28 @@
+{
+    "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
+    "include": ["electron.vite.config.*", "src/main/**/*", "src/service/**/*", "src/shared/**/*", "src/server/**/*", "src/preload/**/*", "src/util/**/*", "src/lib/**/*"],
+    "compilerOptions": {
+        "types": ["electron-vite/node", "vite/client", "jest"],
+        "moduleResolution": "node",
+        "lib": ["dom", "ESNext"],
+        "composite": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/renderer/*"],
+            "@service/*": ["src/service/*"],
+            "@shared/*": ["src/shared/*"],
+            "@shared": ["src/shared/index"],
+            "@server/*": ["src/server/*"],
+            "@server": ["src/server/index"],
+            "@util/*": ["src/util/*"],
+            "@util": ["src/util/index"],
+            "@lib": ["src/lib/index"],
+            "@stores/*": ["src/renderer/stores/*"],
+            "@stores": ["src/renderer/stores"],
+            "@hooks/*": ["src/renderer/hooks/*"],
+            "@lib/*": ["src/lib/*"],
+            "@utils/*": ["src/renderer/utils/*"],
+            "@utils": ["src/renderer/utils/index"],
+        }
+    }
+}

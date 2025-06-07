@@ -1,0 +1,235 @@
+@use '../../../themes/variables' as *;
+.infrared-content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex: 1;
+	min-height: 0px;
+	padding: 0px 40px 20px 40px;
+	color: #333;
+	h3 {
+		font-size: $font-size-lg;
+		line-height: 3.5;
+	}
+	.infraredPoints,
+	.point-files {
+		min-height: 0px;
+	}
+	.result-title{
+		font-size: $font-size-lg;
+		line-height: 3.5;
+	}
+	.infraredPoints {
+		.infrared-point-item {
+			display: flex;
+			flex-direction: column;
+			background: #fff;
+			padding: 24px;
+			margin-top: 24px;
+			border-radius: 10px;
+			gap: 15px;
+			p {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				font-size: $font-size-md;
+				span {
+					color: #999;
+				}
+				img{
+					width: 30px;
+				}
+			}
+			p:first-child {
+				justify-content: space-between;
+				span {
+					font-size: $font-size-lg;
+					color: #333;
+				}
+				.device-name {
+					font-weight: bold;
+				}
+			}
+		}
+		.infrared-point-item:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.infraredPointsMinHeight {
+		min-height: 265px;
+	}
+
+	.infraredPointsMore {
+		position: relative;
+		.infrared-point-item {
+			position: relative;
+			margin-left: 80px;
+		}
+		.infrared-point-item::before {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			background: #f5f7fa;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: -56px;
+			border: 2px solid $dominant-color;
+			box-shadow: 0 0 0 5px #f5f7fa;
+			z-index: 2;
+		}
+
+		.infrared-point-item::after {
+			content: '';
+			display: block;
+			width: 2px;
+			height: 100%;
+			background: $dominant-color;
+			position: absolute;
+			top: calc(100% + 12px);
+			left: -45px;
+			bottom: 0;
+			margin: auto;
+			z-index: 1;
+		}
+
+		.infrared-point-item:last-child::after {
+			display: none;
+		}
+
+		.infrared-point-item:first-child::before,
+		.infrared-point-item:last-child::before {
+			content: '起';
+			color: $dominant-color;
+			width: 34px;
+			height: 34px;
+			font-size: $font-size-md;
+			line-height: 29px;
+			left: -61px;
+			text-align: center;
+		}
+
+		.infrared-point-item:last-child::before {
+			content: '止';
+		}
+	}
+
+	.collapse-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		color: $dominant-color;
+		font-size: $font-size-lg;
+	}
+
+	.infraredPointsFlex {
+		flex: 1;
+	}
+	.point-files {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		.point-file-item {
+			display: flex;
+			flex-direction: column;
+			background: #fff;
+			border-radius: 10px;
+			padding: 20px 20px 0px 20px;
+			border: 2px solid #f5f7fa;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			box-sizing: border-box;
+			span {
+				display: flex;
+				width: 100%;
+				gap: 10px;
+				color: #999;
+				line-height: 60px;
+				em {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: calc(50% - 5px);
+					aspect-ratio: 1 / 1;
+					font-size: 0;
+					background-image: linear-gradient(0deg, #fafbfd 0%, #f5f7fa 57%, rgba(236, 238, 242, 0.71) 100%);
+					border-radius: 8px;
+					font-style: normal;
+					border: 1px solid rgba(236, 238, 242, 0.71);
+					img {
+						width: 100%;
+						height: 100%;
+					}
+					i {
+						font-style: normal;
+						font-size:$font-size-lg;
+					}
+				}
+				em.add {
+					width: 100%;
+					aspect-ratio: 2 / 1;
+				}
+				.file-status {
+					position: absolute;
+					right: -12px;
+					top: -12px;
+					border-radius: 50%;
+					width: 24px;
+					height: 24px;
+					text-align: center;
+					z-index: 2;
+					line-height: 20px;
+				}
+				.file-status-0 {
+					background: rgba(253, 170, 86, 0.51);
+				}
+				.file-status-1 {
+					background: rgba(13, 134, 127, 1);
+				}
+				.file-status-2 {
+					background: #333;
+				}
+				.file-status-10 {
+					background: rgba(255, 49, 65, 0.5);
+				}
+				.file-status-500 {
+					background: rgba(255, 49, 65, 0.5);
+				}
+			}
+			span:last-child {
+				justify-content: center;
+				align-items: center;
+				i.tip {
+					width: 100%;
+					font-style: normal;
+					line-height: 60px;
+					font-size: $font-size-md;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					text-align: center;
+				}
+				i.time {
+					font-style: normal;
+					width: 90%;
+				}
+				i.more {
+					font-size: $font-size-lg;
+					transform: rotate(90deg);
+					color: $dominant-color;
+					margin-left: auto;
+				}
+			}
+		}
+		.active {
+			border: 2px solid $dominant-color;
+		}
+	}
+}

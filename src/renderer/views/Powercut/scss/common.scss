@@ -1,0 +1,98 @@
+@use '../../../themes/variables' as *;
+:deep(.van-dialog) {
+	width: 560px;
+	.van-dialog__header {
+		padding: 0;
+        height: 106px;
+		line-height: 106px;
+		margin-bottom: 0;
+		font-family: PingFangSC-Regular;
+        font-size: $font-size-xl;
+        color: #333333;
+        text-align: center;
+        font-weight: 500;
+	}
+	ul {
+		li {
+			height: 98px;
+			text-align: center;
+			font-family: PingFangSC-Regular;
+			font-size: $font-size-xl;
+			color: #0d867f;
+			text-align: center;
+			font-weight: 400;
+			line-height: 98px;
+			border-top: 1px solid #e5e5e5;
+			&:nth-child(1) {
+				font-weight: 700;
+			}
+			&:nth-child(2) {
+				border-bottom: 1px solid #e5e5e5;
+			}
+		}
+	}
+}
+:deep(.van-button) {
+	height: 98px;
+	.van-button__text {
+		font-size: $font-size-xl;
+	}
+}
+:deep(.van-stepper__input) {
+	font-size: $font-size-xl;
+	color: #333333;
+	font-weight: 400;
+}
+:deep(.van-stepper__minus:before, .van-stepper__plus:before) {
+	width: 50%;
+	height: 2px;
+}
+:deep(.van-stepper__plus:after) {
+	width: 2px;
+	height: 50%;
+}
+:deep(.van-nav-bar__text) {
+	font-size: $font-size-xl;
+	color: #0d867f;
+	text-align: right;
+	font-weight: 400;
+}
+:deep(.van-action-sheet__cancel) {
+	height: 114px;
+	font-size: $font-size-xl;
+	color: #333333;
+	text-align: center;
+	font-weight: 400;
+}
+:deep(.van-action-sheet__description) {
+	height: 114px;
+	line-height: 77px;
+	font-size: $font-size-xl;
+	color: #999999;
+	text-align: center;
+	font-weight: 400;
+}
+:deep(.el-input__wrapper) {
+    background: #F7F7FA;
+    border-radius: 8px;
+    height: 64px;
+    border: 1px solid #F7F7FA;
+    font-size: $font-size-xl;
+    color: #333333;
+    text-align: right;
+    font-weight: 400;
+}
+
+:deep(.el-empty__description) {
+    p {
+        font-size: $font-size-xl;
+    }
+}
+:deep(.el-input__suffix) {
+    .el-input__clear {
+        font-size: $font-size-xl;
+    }
+}
+:deep(.van-cell__label) {
+    font-size: $font-size-xl;
+}

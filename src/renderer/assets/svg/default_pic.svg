@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组备份 5</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="插图" transform="translate(-711.000000, -150.000000)">
+            <g id="编组备份-5" transform="translate(711.000000, 150.000000)">
+                <rect id="矩形" x="0" y="0" width="64" height="64" rx="4"></rect>
+                <g id="编组-7" transform="translate(6.000000, 9.000000)">
+                    <rect id="矩形" fill="#E6EAE9" x="0" y="0" width="51" height="47" rx="3"></rect>
+                    <ellipse id="椭圆形" fill="#D8D8D8" cx="25.3425926" cy="23.2980769" rx="17.0669819" ry="17"></ellipse>
+                    <polygon id="路径备份" fill-opacity="0.6" fill="#FFFFFF" points="22.642635 35.0523626 25.295163 26.3850074 17.6894098 26.3850074 23.1738305 13.2923626 29.0100819 13.2923626 24.9421465 21.7753666 33.786206 21.7753666"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

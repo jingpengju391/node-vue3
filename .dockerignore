@@ -1,0 +1,23 @@
+# git directories
+.git/
+
+# vscode directories
+.vscode/
+
+# dist directories
+dist/
+
+# docker directories
+docker/
+
+# node modules
+node_modules/
+
+# out directories
+out/
+
+# dockerignore file itself
+.dockerignore
+
+# Documentation files
+*.md

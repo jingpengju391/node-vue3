@@ -1,0 +1,83 @@
+@use '../../themes/variables' as *;
+.user-container {
+	display: flex;
+	width: 100%;
+	background: #fff;
+	align-items: center;
+	gap: 24px;
+	padding: 40px;
+	&-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		h1 {
+			color: $dominant-color;
+			margin: 0;
+			font-size: $font-size-xxxl;
+		}
+		&-up {
+			display: flex;
+			margin-top: 20px;
+			span {
+				display: flex;
+				align-items: center;
+				margin-right: 100px;
+				em {
+					margin-left: 14px;
+					font-style: normal;
+					font-size: $font-size-xxl;
+					color: #333;
+				}
+			}
+		}
+	}
+}
+
+.set-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 24px 0;
+	gap: 2px;
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		background: #fff;
+		padding: 20px 40px;
+		font-size: $font-size-lg;
+		:deep(.van-tabs__wrap) {
+			height: auto;
+		}
+		:deep(.van-tab) {
+			font-size: $font-size-xxl;
+			width: 100px;
+			line-height: 3rem;
+		}
+		:deep(.van-tabs__nav--card) {
+			height: auto;
+			margin: 0;
+			border-color: $dominant-color;
+			.van-tab--card {
+				color: $dominant-color;
+			}
+		}
+		:deep(.van-tab--active) {
+			background-color: $dominant-color;
+			.van-tab__text {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.login-out {
+	width: 100%;
+	border-radius: 0px;
+	background: #fff;
+	border-color: #fff;
+	color: #ff3141;
+	font-size: $font-size-xxl;
+	height: 5.25rem;
+}

@@ -1,0 +1,120 @@
+@use '../../../themes/variables' as *;
+
+.wapper {
+	.time {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.line {
+			width: 100px;
+			height: 1px;
+			background: #727477;
+			display: inline-block;
+		}
+	}
+	.methods-ul {
+		li {
+			background: #fff;
+			box-shadow: 0 0 10px 0 rgba(164, 168, 174, 0.22);
+			border-radius: 16px;
+			margin: 24px;
+			.title {
+				height: 85px;
+				padding-left: 24px;
+				display: flex;
+				align-items: center;
+				span {
+					&:nth-child(1) {
+						font-size: $font-size-xxl;
+						color: #333333;
+						font-weight: 600 !important;
+						margin-right: 38px;
+					}
+					&:nth-child(2) {
+						font-size: $font-size-xl;
+						color: #727477;
+					}
+				}
+			}
+			.item {
+				height: 88px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 24px;
+				border-top: 1px solid #eeeeee;
+
+				div {
+					display: flex;
+					align-items: center;
+					&:nth-child(1) {
+						img {
+							margin-right: 16px;
+							width: 56px;
+							height: 56px;
+						}
+						font-size: $font-size-xl;
+						color: #333333;
+						font-weight: 500 !important;
+					}
+				}
+				.status {
+					width: 108px;
+					height: 44px;
+					text-align: center;
+					display: inline-block;
+					background: #ffffff;
+					border: 2px solid #9fcfcc;
+					border-radius: 4px;
+					font-size: $font-size-lg;
+					color: #0d867f;
+					text-align: center;
+					font-weight: 600 !important;
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+	.submit {
+		padding: 24px 112px;
+		background: #fff;
+	}
+	:deep(.van-cell) {
+		height: 96px;
+		line-height: 96px;
+		padding: 0 24px;
+		.van-cell__title {
+			span {
+				font-size: $font-size-xl;
+				color: #333333;
+                font-weight: 400 !important;
+			}
+		}
+		.van-cell__value {
+			font-size: $font-size-xl;
+			color: #727477;
+            font-weight: 400 !important;
+		}
+	}
+	:deep(.van-button) {
+		height: 98px;
+		.van-button__text {
+			font-size: $font-size-xl;
+		}
+	}
+	.more {
+		text-align: center;
+		.custom-title {
+			color: #0d867f !important;
+			font-size: $font-size-xl;
+			margin-right: 10px;
+			font-weight: 400 !important;
+		}
+	}
+}
+:deep(.remark) {
+    .van-cell__label {
+        line-height: 32px;
+        font-size: $font-size-xl;
+    }
+}

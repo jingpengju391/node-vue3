@@ -1,0 +1,88 @@
+@use '../../themes/variables' as *;
+.content {
+	background: #ffffff;
+	padding: 20px 40px;
+	margin-top: 2px;
+	h2{
+		font-size: $font-size-xxl;
+		margin-bottom: 14px;
+	}
+
+	h3{
+		font-size: $font-size-lg;
+		color: #999;
+	}
+}
+
+.active {
+	position: relative;
+	background: #e7f3f2;
+	overflow: hidden;
+}
+
+.active::before {
+	content: '';
+	display: block;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid #0f867f;
+	border-left: 20px solid transparent;
+	border-right: 20px solid #0f867f;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.active::after {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 15px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 5px 3px 0;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 6px;
+	bottom: 8px;
+}
+
+.mode-form-box {
+	margin-top: 20px;
+	.el-form-item {
+		background: #fff;
+		margin-bottom: 2px;
+		padding: 20px 40px;
+		:deep(.el-input__wrapper) {
+			background: #fff !important;
+			box-shadow: none !important;
+		}
+		:deep(.el-form-item__label) {
+			font-size: $font-size-xxl !important;
+			margin-right: 30px;
+		}
+		:deep(.el-input__inner) {
+			line-height: 40px;
+			height: 44px;
+			font-size: $font-size-xl !important;
+		}
+		.el-scrollbar__bar is-vertical {
+			display: none;
+		}
+		:deep(.el-form-item__error) {
+			font-size: $font-size-xxl;
+			left: 10px;
+			z-index: 10;
+		}
+		:deep(.el-form-item__label-wrap) {
+			align-items: center;
+		}
+		.wifiName{
+			color: #a8abb2;
+			font-size: $font-size-xl;
+			padding-left: 11px;
+			line-height: 40px;
+		}
+		.cliented {
+			color: #606266;
+		}
+	}
+}

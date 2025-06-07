@@ -1,0 +1,139 @@
+@use '../../themes/variables' as *;
+
+.content-box {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	background-color: #fff;
+	margin-bottom: 2px;
+	position: relative;
+	padding: 0 60px;
+	.item-box {
+		display: flex;
+		width: 100%;
+		height: 80px;
+		align-items: center;
+		justify-content: space-between;
+		.wifi-icon {
+			width: 30px;
+			height: 25px;
+			display: grid;
+		}
+		.item-select {
+			position: absolute;
+			left: 20px;
+		}
+	}
+	em {
+		font-style: normal;
+		color: #999;
+	}
+	.connect-box {
+		display: flex;
+		flex-direction: column;
+		.load-info {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			.mx-1 {
+				color: #e6a23c;
+				text-align: left;
+				width: 100%;
+				font-size: $font-size-md;
+			}
+			&:deep(.el-input) {
+				width: 50%;
+				height: 48px;
+				font-size: $font-size-lg;
+				.el-icon {
+					font-size: $font-size-lg;
+				}
+			}
+		}
+		.button-group-box {
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 20px;
+			gap: 18px;
+			&:deep(.van-button) {
+				width: 200px;
+			}
+		}
+		em {
+			margin-bottom: 20px;
+			color: #fff;
+			font-weight: bold;
+		}
+		i {
+			color: #fff;
+			font-style: normal;
+			font-size: $font-size-md;
+		}
+	}
+}
+
+.active {
+	background-color: $dominant-bg-color;
+	h2 {
+		color: #fff;
+	}
+	em {
+		color: #ededed;
+		font-size: $font-size-md;
+	}
+}
+
+.loader {
+	display: inline-block;
+	width: 8px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	clip-path: inset(-45px);
+	box-shadow:
+		-60px 15px,
+		-60px 15px,
+		-60px 15px;
+	transform: translateY(-15px);
+	animation: l19 2s infinite ease-in-out;
+	color: #fff;
+	margin-left: 50px;
+}
+@keyframes l19 {
+	16.67% {
+		box-shadow:
+			-60px 15px,
+			-60px 15px,
+			19px 15px;
+	}
+	33.33% {
+		box-shadow:
+			-60px 15px,
+			0px 15px,
+			19px 15px;
+	}
+	40%,
+	60% {
+		box-shadow:
+			-19px 15px,
+			0px 15px,
+			19px 15px;
+	}
+	66.67% {
+		box-shadow:
+			-19px 15px,
+			0px 15px,
+			60px 15px;
+	}
+	83.33% {
+		box-shadow:
+			-19px 15px,
+			60px 15px,
+			60px 15px;
+	}
+	100% {
+		box-shadow:
+			60px 15px,
+			60px 15px,
+			60px 15px;
+	}
+}

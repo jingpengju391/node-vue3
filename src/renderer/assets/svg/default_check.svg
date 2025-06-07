@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 10</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-10">
+            <rect id="矩形" x="0" y="0" width="64" height="64" rx="4"></rect>
+            <circle id="椭圆形" fill="#D8D8D8" cx="32" cy="32" r="31"></circle>
+            <polygon id="路径备份" fill-opacity="0.6" fill="#FFFFFF" points="26.358742 53.88 31.2347126 37.9473617 17.2535486 37.9473617 27.3352043 13.88 38.0636077 13.88 30.5857853 29.4737572 46.8432477 29.4737572"></polygon>
+        </g>
+    </g>
+</svg>

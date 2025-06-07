@@ -1,0 +1,77 @@
+@use '../../themes/variables' as *;
+.container-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -2;
+	background: #007b73;
+
+	&-left {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: max(100vw, 100vh);
+		aspect-ratio: 1;
+		background: #fff;
+		transform: translate(-61%, -15%) rotate(-45deg);
+		z-index: 1;
+		border-radius: 100px;
+		box-shadow: 0px 0px 2px 2px $dominant-bg-color;
+	}
+
+	&-right {
+		display: flex;
+		flex-direction: column;
+		width: max(100vw, 100vh);
+		height: 100%;
+		gap: 80px;
+		transform: rotate(-45deg) translate(20%, 0px);
+		em {
+			display: inline-block;
+			width: 100%;
+			flex: 1;
+			border-radius: 50px;
+		}
+
+		em:first-child {
+			aspect-ratio: 1;
+			transform: translate(52%, 0px);
+			background: #008179;
+		}
+
+		em:nth-child(2) {
+			width: 200%;
+			transform: translate(-5%, 0px);
+			background: $dominant-bg-color;
+			box-shadow: 0px 0px 20px 20px #007b73;
+		}
+
+		em:nth-child(3) {
+			transform: translate(-80%, 0px);
+			background: $dominant-color;
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container-bg {
+		&-left {
+			transform: translate(-50%, -25%) rotate(-45deg);
+		}
+		&-right {
+			gap: 40px;
+			transform: rotate(-45deg) translate(20%, 10%);
+			em:nth-child(2) {
+				width: 200%;
+				transform: translate(5%, 0px);
+			}
+			em:nth-child(3) {
+				transform-origin: top;
+				transform: translate(-40%, 0px) scale(1, 3);
+			}
+		}
+	}
+}

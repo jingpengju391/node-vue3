@@ -1,0 +1,198 @@
+@use '../../themes/variables' as *;
+
+.network-adrawer-modal {
+	.el-drawer {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.header-box {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		.close-network {
+			font-size: 30px;
+		}
+		.close-network::before {
+			font-weight: bold;
+		}
+	}
+	.network-status,
+	.refresh-network {
+		display: flex;
+		gap: 16px;
+		font-size: 22px;
+		justify-content: center;
+		align-items: center;
+	}
+	.network-status {
+		margin-top: 24px;
+	}
+	.switch-box {
+		display: flex;
+		width: 100%;
+		gap: 24px;
+		margin-top: 24px;
+		div {
+			flex: 1;
+			text-align: center;
+			line-height: 62px;
+			background: #f7f7fa;
+			border-radius: 8px;
+			font-size: 18px;
+			color: #333;
+			font-weight: 500;
+			position: relative;
+		}
+		.switchBtn {
+			background: #e7f3f2;
+		}
+		.connectNet::before,
+		.connectNet::after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 1px;
+			bottom: 1px;
+		}
+		.connectNet::before {
+			width: 30px;
+			height: 30px;
+			background: linear-gradient(45deg, $dominant-color, $dominant-color 50%, transparent 50%, transparent 100%);
+			transform: rotate(270deg);
+		}
+		.connectNet::after {
+			width: 12px;
+			height: 8px;
+			border-left: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+			transform: rotate(-45deg);
+			right: 4px;
+			bottom: 8px;
+		}
+	}
+	.content-box {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		.wifi-box,
+		.wait-upload-box {
+			display: flex;
+			background: #f7f7fa;
+			border-radius: 4px;
+			margin-bottom: 24px;
+			padding: 24px;
+			align-items: center;
+			gap: 24px;
+		}
+		.wifi-box {
+			.wifi-icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 66px;
+				height: 66px;
+				background-color: $dominant-color;
+				border-radius: 50%;
+			}
+			.wifi-icon-off {
+				background-color: #c9c9c9;
+			}
+			.wifi-info {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				padding-left: 24px;
+				color: #999;
+				span:first-child {
+					font-size: 24px;
+					color: #333;
+				}
+			}
+			.wifi-info::before {
+				content: '';
+				display: block;
+				width: 2px;
+				height: 40px;
+				background: #ccc;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				left: 0px;
+			}
+			.right-t {
+				margin-left: auto;
+				color: #ccc;
+			}
+		}
+		.wait-upload-box {
+			height: 114px;
+			font-size: 18px;
+			color: #333;
+			span:nth-child(2) {
+				font-weight: 500;
+			}
+			span:last-child {
+				font-weight: 500;
+				margin-left: auto;
+				color: $dominant-color;
+			}
+		}
+	}
+}
+
+.loader-mark {
+	width: 24px;
+	height: 24px;
+	border: 4px solid #0d867f;
+	border-radius: 50%;
+	font-size: 0px;
+	--_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+	-webkit-mask: var(--_m);
+	mask: var(--_m);
+	-webkit-mask-composite: source-out;
+	mask-composite: subtract;
+	animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+.exclamation-mark,
+.check-mark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	background-color: rgb(245, 108, 108);
+	border-radius: 50%;
+}
+
+.exclamation-mark::before {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 14px;
+	background: linear-gradient(to bottom, #fff 70%, transparent 70%, transparent 85%, #fff 85%);
+	border-radius: 5px;
+}
+
+.check-mark {
+	background-color: #0d867f;
+}
+
+.check-mark::before {
+	content: '';
+	display: block;
+	position: relative;
+	width: 12px;
+	height: 8px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(-45deg);
+	margin-top: -4px;
+}

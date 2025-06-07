@@ -1,0 +1,47 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+	$colors: (
+		'primary': (
+			'base': #0d867f
+		)
+	)
+);
+
+.el-message-box {
+	background: #ffffff;
+	border-radius: 16px;
+	padding: 24px;
+	font-size: 20px;
+	.el-message-box__title {
+		font-size: 24px;
+		font-weight: 500;
+	}
+	.el-message-box__message {
+		p {
+			margin: 0 auto 15px;
+			color: #333333;
+			text-align: center;
+			font-size: 22px;
+			line-height: 33px;
+			div {
+				&:nth-child(1) {
+					font-size: 24px;
+					font-weight: 500;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+	.el-message-box__headerbtn {
+		right: 10px;
+		top: 10px;
+		.el-message-box__close {
+			font-size: 35px;
+		}
+	}
+	.el-button {
+		width: 100px;
+		height: 58px;
+		font-size: 23px;
+		border-radius: 8px;
+	}
+}

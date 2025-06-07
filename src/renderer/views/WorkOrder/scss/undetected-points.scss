@@ -1,0 +1,144 @@
+@use '../../../themes/variables' as *;
+
+.submit-work-order {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding: 20px 0;
+	&-button {
+		width: 80%;
+		border-radius: 33px;
+	}
+}
+
+.dropdown-menu {
+	margin-top: 2px;
+	:deep(.van-popup) {
+		display: grid !important;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+		padding: 20px;
+		.van-cell {
+			width: 100%;
+			background: #f5f7fa;
+		}
+	}
+	:deep(.active) {
+		color: $dominant-color;
+	}
+	:deep(.van-cell__title){
+		white-space:nowrap;
+	}
+}
+
+.select-all {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	gap: 20px;
+	h3 {
+		font-size: $font-size-lg;
+		margin-right: auto;
+	}
+	span {
+		font-size: $font-size-lg;
+		color: $dominant-color;
+	}
+}
+
+.select-icon {
+	display: inline-block;
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #d5d5d5;
+}
+
+.is-select {
+	position: relative;
+	overflow: hidden;
+	background: $dominant-color;
+	border: 2px solid $dominant-color;
+}
+
+.is-select::before {
+	content: '';
+	display: block;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid #0f867f;
+	border-left: 15px solid transparent;
+	border-right: 15px solid #0f867f;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.is-select::after {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 12px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+}
+
+.container-order {
+	padding: 0 40px;
+	.point-item {
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		width: 100%;
+		background: #fff;
+		margin-bottom: 20px;
+		gap: 20px;
+		.device-card {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			gap: 20px;
+			.device-reason {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				.device-name {
+					font-size: $font-size-lg;
+					font-weight: bold;
+					color: #333;
+				}
+				.device-method {
+					margin-right: auto;
+					font-size: $font-size-lg;
+					color: #999;
+				}
+				.device-position {
+					font-size: $font-size-lg;
+					color: #333;
+				}
+			}
+			.device-value {
+				display: flex;
+				width: 100%;
+				align-items: center;
+				justify-content: space-between;
+				font-size: $font-size-lg;
+				color: rgb(204, 204, 204);
+				background: #f5f7fa;
+				padding: 20px;
+				border-radius: 8px;
+				.reasonNotDetect{
+					color: #333;
+				}
+			}
+		}
+	}
+}

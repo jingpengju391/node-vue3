@@ -1,0 +1,15 @@
+.vscode
+db
+dist
+mock
+node_modules
+out
+patches
+public
+resource
+src/renderer/assets
+tasks
+pnpm-lock.yaml
+LICENSE.md
+tsconfig.json
+tsconfig.*.json

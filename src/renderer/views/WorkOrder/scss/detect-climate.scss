@@ -1,0 +1,112 @@
+@use '../../../themes/variables' as *;
+h3 {
+	padding: 20px 40px;
+	color: #999;
+	font-size: $font-size-lg;
+}
+.button-box {
+	display: flex;
+	width: 100%;
+	font-size: $font-size-lg;
+	gap: 2px;
+	margin-top: auto;
+	span {
+		flex: 1;
+		text-align: center;
+		color: #333;
+		background: #fff;
+		line-height: 80px;
+	}
+	span:last-child {
+		color: $dominant-color;
+	}
+}
+
+.detect-method-climate {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background: #fff;
+	font-size: $font-size-lg;
+	padding: 0 40px;
+	line-height: 80px;
+	margin-bottom: 2px;
+}
+
+.detect-method-item {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: #fff;
+	margin-top: 20px;
+	padding: 0 40px;
+	font-size: $font-size-lg;
+	div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+		gap: 20px;
+
+		.center-r {
+			margin-right: auto;
+		}
+	}
+	div:last-child {
+		border-top: 2px solid #f5f7fa;
+		.select-item {
+			padding: 15px 30px;
+			color: rgb(255, 126, 0);
+			background: rgb(247, 247, 250);
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.center-l {
+			margin-left: auto;
+		}
+		.active {
+			position: relative;
+			background: #e7f3f2;
+			color: $dominant-color;
+			background: rgb(231, 243, 242);
+			overflow: hidden;
+		}
+
+		.active::before {
+			content: '';
+			display: block;
+			border-top: 15px solid transparent;
+			border-bottom: 15px solid #0f867f;
+			border-left: 15px solid transparent;
+			border-right: 15px solid #0f867f;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		.active::after {
+			content: '';
+			display: block;
+			width: 8px;
+			height: 12px;
+			border-color: #fff;
+			border-style: solid;
+			border-width: 0 3px 2px 0;
+			transform: rotate(45deg);
+			position: absolute;
+			right: 4px;
+			bottom: 5px;
+		}
+	}
+}
+
+.submit-work-order {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding: 20px 0;
+	&-button {
+		width: 80%;
+		border-radius: 33px;
+	}
+}

@@ -1,0 +1,11 @@
+services:
+    app:
+        build:
+            context: .. # Set the build context to the parent directory of the project
+            dockerfile: docker/Dockerfile # Use docker/Dockerfile as the Dockerfile for the build process
+        platform: linux/arm64 # Set the platform to arm64 architecture
+        volumes:
+            - ..:/app # Mount the project root directory from the host to /app inside the container
+        environment:
+            - NODE_ENV=production # Set the environment variable NODE_ENV to production
+        working_dir: /app # Set the working directory inside the container to /app

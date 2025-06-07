@@ -1,0 +1,58 @@
+@use '../../themes/variables' as *;
+
+.wifi-adrawer-modal {
+	height: calc(100% - $head-height) !important;
+	margin-top: $head-height;
+	.el-drawer {
+		box-shadow: none;
+		background-color: #f5f7fa;
+		.el-drawer__header {
+			// padding: 0px;
+			padding: 0 !important;
+			margin-bottom: 20px;
+			.header-box {
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				.header-top,
+				.header-btm {
+					display: flex;
+					width: 100%;
+					height: 68px;
+					align-items: center;
+					justify-content: space-between;
+					background-color: #fff;
+					line-height: $head-height;
+					font-size: $font-size-xl;
+					color: #333333;
+				}
+				.header-top {
+					font-size: $font-size-md;
+					color: #333;
+					margin-bottom: 2px;
+					padding: 0 20px;
+				}
+				.header-btm {
+					font-size: $font-size-base;
+					padding: 0 60px;
+				}
+				.mx-1 {
+					width: 100%;
+					padding: 10px 60px;
+				}
+			}
+		}
+	}
+	.el-drawer__body {
+		padding: 0 !important;
+		.container-order {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			gap: 24px;
+			.container-scrollbar {
+				width: 100%;
+			}
+		}
+	}
+}

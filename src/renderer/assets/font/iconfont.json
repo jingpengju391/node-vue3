@@ -1,0 +1,359 @@
+{
+  "id": "4651967",
+  "name": "5gapp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9018431",
+      "name": "待执行",
+      "font_class": "upload-0",
+      "unicode": "eae0",
+      "unicode_decimal": 60128
+    },
+    {
+      "icon_id": "880299",
+      "name": "文件",
+      "font_class": "file",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "12165884",
+      "name": "向上箭头-圆-实",
+      "font_class": "upload-10",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    },
+    {
+      "icon_id": "4254419",
+      "name": "处理失败:训练失败",
+      "font_class": "upload-500",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "11882922",
+      "name": "bg-complete",
+      "font_class": "upload-2",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "12266532",
+      "name": "待执行",
+      "font_class": "upload-1",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "26361706",
+      "name": "工单列表",
+      "font_class": "gongdanliebiaoactive",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "43310837",
+      "name": "工单列表",
+      "font_class": "gongdanliebiao",
+      "unicode": "e8aa",
+      "unicode_decimal": 59562
+    },
+    {
+      "icon_id": "12503672",
+      "name": "默认头像-女",
+      "font_class": "morentouxiang-nv",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "27350974",
+      "name": "头像-女",
+      "font_class": "touxiang-nv",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "479389",
+      "name": "电话",
+      "font_class": "dianhua1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "6953156",
+      "name": "变压器",
+      "font_class": "tingdianjiance",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "33988067",
+      "name": "终端信息维护",
+      "font_class": "zhongduanxinxiweihu",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "8540882",
+      "name": "默认头像",
+      "font_class": "morentouxiang",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "2127177",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "12062318",
+      "name": "电站管理",
+      "font_class": "dianzhanguanli",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "6940818",
+      "name": "蓝牙",
+      "font_class": "lanya",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "23984107",
+      "name": "连接平台-我的连接器",
+      "font_class": "lianjiepingtai-wodelianjieqi",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "35535642",
+      "name": "连接断开",
+      "font_class": "lianjieduankai",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "5712913",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "11121440",
+      "name": "剪切",
+      "font_class": "jianqie",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "11121506",
+      "name": "粘贴",
+      "font_class": "niantie",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "29925",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "1299794",
+      "name": "Maximize-1",
+      "font_class": "maximize",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "1306794",
+      "name": "Maximize-3",
+      "font_class": "restore",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "3278383",
+      "name": "缩小",
+      "font_class": "suoxiao",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "41445222",
+      "name": "wifi",
+      "font_class": "wifi_1",
+      "unicode": "e89d",
+      "unicode_decimal": 59549
+    },
+    {
+      "icon_id": "41437708",
+      "name": "wifi",
+      "font_class": "wifi_2",
+      "unicode": "e893",
+      "unicode_decimal": 59539
+    },
+    {
+      "icon_id": "41437709",
+      "name": "wifi",
+      "font_class": "wifi_3",
+      "unicode": "e894",
+      "unicode_decimal": 59540
+    },
+    {
+      "icon_id": "41437710",
+      "name": "wifi",
+      "font_class": "wifi_4",
+      "unicode": "e895",
+      "unicode_decimal": 59541
+    },
+    {
+      "icon_id": "41437712",
+      "name": "wifi",
+      "font_class": "wifi_5",
+      "unicode": "e896",
+      "unicode_decimal": 59542
+    },
+    {
+      "icon_id": "41437765",
+      "name": "移动网络",
+      "font_class": "mobile_1",
+      "unicode": "e897",
+      "unicode_decimal": 59543
+    },
+    {
+      "icon_id": "41437767",
+      "name": "移动网络",
+      "font_class": "mobile_2",
+      "unicode": "e898",
+      "unicode_decimal": 59544
+    },
+    {
+      "icon_id": "41437769",
+      "name": "移动网络",
+      "font_class": "mobile_3",
+      "unicode": "e899",
+      "unicode_decimal": 59545
+    },
+    {
+      "icon_id": "43217425",
+      "name": "移动网络-无信号-copy",
+      "font_class": "mobile_0_white",
+      "unicode": "e8a4",
+      "unicode_decimal": 59556
+    },
+    {
+      "icon_id": "41437770",
+      "name": "移动网络",
+      "font_class": "mobile_4",
+      "unicode": "e89a",
+      "unicode_decimal": 59546
+    },
+    {
+      "icon_id": "41437782",
+      "name": "移动网络",
+      "font_class": "mobile_5",
+      "unicode": "e89b",
+      "unicode_decimal": 59547
+    },
+    {
+      "icon_id": "41439783",
+      "name": "no_wifi-copy",
+      "font_class": "wifi_0",
+      "unicode": "e89c",
+      "unicode_decimal": 59548
+    },
+    {
+      "icon_id": "38283599",
+      "name": "移动网络-无信号",
+      "font_class": "mobile_0",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "43217430",
+      "name": "移动网络",
+      "font_class": "mobile_1_white",
+      "unicode": "e8a5",
+      "unicode_decimal": 59557
+    },
+    {
+      "icon_id": "43217432",
+      "name": "移动网络",
+      "font_class": "mobile_2_white",
+      "unicode": "e8a6",
+      "unicode_decimal": 59558
+    },
+    {
+      "icon_id": "43217434",
+      "name": "移动网络",
+      "font_class": "mobile_3_white",
+      "unicode": "e8a7",
+      "unicode_decimal": 59559
+    },
+    {
+      "icon_id": "43217436",
+      "name": "移动网络",
+      "font_class": "mobile_4_white",
+      "unicode": "e8a8",
+      "unicode_decimal": 59560
+    },
+    {
+      "icon_id": "43217437",
+      "name": "移动网络",
+      "font_class": "mobile_5_white",
+      "unicode": "e8a9",
+      "unicode_decimal": 59561
+    },
+    {
+      "icon_id": "43077111",
+      "name": "wifi",
+      "font_class": "wifi_2_white",
+      "unicode": "e89e",
+      "unicode_decimal": 59550
+    },
+    {
+      "icon_id": "43077114",
+      "name": "wifi",
+      "font_class": "wifi_3_white",
+      "unicode": "e89f",
+      "unicode_decimal": 59551
+    },
+    {
+      "icon_id": "43077115",
+      "name": "wifi",
+      "font_class": "wifi_4_white",
+      "unicode": "e8a0",
+      "unicode_decimal": 59552
+    },
+    {
+      "icon_id": "43077116",
+      "name": "wifi",
+      "font_class": "wifi_5_white",
+      "unicode": "e8a1",
+      "unicode_decimal": 59553
+    },
+    {
+      "icon_id": "43077117",
+      "name": "wifi",
+      "font_class": "wifi_1_white",
+      "unicode": "e8a2",
+      "unicode_decimal": 59554
+    },
+    {
+      "icon_id": "43133365",
+      "name": "no_wifi-copy-copy",
+      "font_class": "wifi_0_white",
+      "unicode": "e8a3",
+      "unicode_decimal": 59555
+    }
+  ]
+}
